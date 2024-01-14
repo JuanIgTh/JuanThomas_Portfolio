@@ -33,21 +33,7 @@ body::before {
   }
 }
 
-@media (max-width: 768px) {
-  body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('https://i.imgur.com/EXlP9ew.jpg');
-    background-size: cover;
-    background-position: left top;
-    filter: blur(5px);
-    z-index: -1;
-  }
-}
+
 
 header {
   background: linear-gradient(rgba(39, 39, 39, 0.5), rgba(51, 51, 51, 0));
@@ -182,4 +168,35 @@ button:hover {
 .hero-job-desc {
   font-size: 1.2em;
   margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://i.imgur.com/EXlP9ew.jpg');
+    background-size: cover;
+    background-position: left top;
+    filter: blur(5px);
+    z-index: -1;
+  }
+  .hero-content,
+  .hero-content-proyect {
+    top: 50%;
+    width: 80%
+  }
+  .heartbeat a img {
+    width: 100%;
+  }
+  form {
+    width: 80%;
+  }
+  hr {
+    width: 80%;
+  }
+
 }
